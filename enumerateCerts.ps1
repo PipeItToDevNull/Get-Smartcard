@@ -18,8 +18,8 @@ Function enumerateCerts {
 				$cert = [PSCustomObject]@{
 					Certificate     = $table.Certificate
 					Subject         = $table.Subject
-					Notbefore       = $table.NotBefore
-					NotAfter        = $table.NotAfter
+					Notbefore       = [DateTime]$table.NotBefore
+					NotAfter        = [DateTime]$table.NotAfter
 					Reader          = $table.Reader
 					Card            = $table.Card
 					Provider        = $table.Provider

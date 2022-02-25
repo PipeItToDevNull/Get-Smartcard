@@ -7,7 +7,7 @@ The Certificate order number, subject, NotBefore, NotAfter, Reader, Card, Provid
 A simple use to view all certs is
 
 ```
-. .\enumerate 
+. .\enumerateCerts.ps1
 $certs = enumerateCerts
 $certs | Out-GridView
 ```
